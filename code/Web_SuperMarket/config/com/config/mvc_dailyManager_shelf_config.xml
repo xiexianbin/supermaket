@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/dailyManager/shelf" class="com.shelf.ShelfAction">  
+	
+	  <!-- 货架列表 -->
+	  <action name="shelfList" method="shelfList">
+	 	 <result name="success">shelfList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <action name="test" method="test">
+	 	 <result name="success">test.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+		
+	<!-- 获取货架下一个最大值 -->
+	  <action name="addShelf" method="addShelf">
+	 	 <result name="success">addShelf.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	<!-- 添加货架 -->
+	  <action name="addShelfMethod" method="addShelfMethod">
+	 	 <result name="success" type="redirect">shelfList.action</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	 	<!-- 查找单个货架信息 -->
+	  <action name="updateShelf" method="updateShelf">
+	 	 <result name="success">updateShelf.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- 更新货架信息 -->
+	  <action name="updateShelfMethod" method="updateShelfMethod">
+	 	 <result name="success" type="redirect">shelfList.action</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+  </default_action_class>
+ </mvc>

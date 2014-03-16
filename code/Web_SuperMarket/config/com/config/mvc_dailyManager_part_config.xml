@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/dailyManager/part" class="com.part.PartAction">  
+	  <!-- 列表 -->
+	  <action name="partList" method="listPart">
+	 	 <result name="success">partList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- 添加获取员工信息 -->
+	   <action name="employeeList" method="listEmployee">
+	 	 <result name="success">addPart.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- 添加 -->
+	  <action name="addNewPart" method="addNewPart">
+	 	 <result name="success" type="redirect">partList.action</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>
+	  
+	  <!-- 修改获取部门信息 -->
+	  <action name="editPart" method="editPart">
+	 	 <result name="success">editPart.jsp</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>
+	   <!-- 修改获取部门信息 -->
+	  <action name="updatePart" method="updatePart">
+	 	 <result name="success" type="redirect">partList.action</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>
+	    <!-- 同一部门人员信息 -->
+	  <action name="OnePartList" method="onePartList">
+	 	 <result name="success">onePartList.jsp</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>
+  </default_action_class>
+</mvc>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+	<default_action_class namespace="/goods"
+		class="com.goodsaction.GoodsAction">
+
+		<!-- upGoods查询 -->
+		<action name="upgoodsList" method="upgoodsList">
+			<result name="success">upgoodsList.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		<!-- 查看详情 -->
+		<action name="upgoodsList1" method="upgoodsList1">
+			<result name="success">upgoodsList1.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+
+		<!-- upGoods插入 -->
+		<action name="upgoodsInsert" method="upgoodsInsert">
+			<result name="success" type="redirect">upgoodsList.action</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		<!-- 下拉框 -->
+		<action name="editUpgoodsInsert" method="editUpgoodsInsert">
+			<result name="success">upgoodsInsert.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		<!-- upGoods更新 -->
+		<action name="upgoodsUpdate" method="upgoodsUpdate">
+			<result name="success" type="redirect">upgoodsList.action</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		<action name="findsUpgoods" method="findsUpgoods">
+			<result name="success">upgoodsUpdate.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		<!-- downGoods查询 -->
+		<action name="downgoodsList" method="downgoodsList">
+			<result name="success">downgoodsList.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+
+		<!-- 查看详情 -->
+		<action name="upgoodsList1" method="upgoodsList1">
+			<result name="success">downgoodsList1.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+
+		<!-- downGoods插入 -->
+		<action name="downgoodsInsert" method="downgoodsInsert">
+			<result name="success" type="redirect">downgoodsList.do</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		<!-- downGoods更新 -->
+		<action name="downgoodsUpdate" method="downgoodsUpdate">
+			<result name="success" type="redirect">downgoodsList.action</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		<action name="findsDowngoods" method="findsDowngoods">
+			<result name="success">downgoodsUpdate.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		<action name="findsDowngoods1" method="downgoodsList1">
+			<result name="success">downgoodsList1.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		<!-- OnSell查询 -->
+		<action name="onsellList" method="onsellList">
+			<result name="success">onsellList.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		<!-- alarm查询 -->
+		<action name="alarmList" method="alarmList">
+			<result name="success">alarmList.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		<action name="downgoodsInsert1" method="downgoodsInsert1">
+			<result name="success">downgoodsInsert.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		<!-- lose 查询 -->
+		<action name="loseList" method="loseList">
+			<result name="success">loseList.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		<!-- ajax获取仓库商品的基本信息，用户上架时提取数据 -->
+		<action name="upGoodsInfo" method="upGoodsInfo">
+			<result name="success">ajax_up_goods_info.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		<!-- ajax获取在售商品的基本信息，用户上架时提取数据 -->
+		<action name="onsellInfo" method="onsellInfo">
+			<result name="success">ajax_down_goods_info.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+
+		<!-- 添加报损信息时，获取报损的流水号 -->
+		<action name="addLosePage" method="addLosePage">
+			<result name="success">addLose.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+
+		<!-- 添加报损信息时，获取报损的流水号 -->
+		<action name="loseInsert" method="loseInsert">
+			<result name="success" type="redirect">loseList.action</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+
+
+
+	</default_action_class>
+</mvc>
+
+
+

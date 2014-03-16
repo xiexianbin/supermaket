@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/finance/empSaleStatistics" class="com.empSaleStatistics.EmpSaleStaAction">  
+	
+	
+	
+	 <action name="empSaleStatisticsList" method="empSaleStatisticsList">
+	 	 <result name="success">mainList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+		 <action name="anyuechaxun" method="empSaleStatisticsList">
+	 	 <result name="success">mainList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	
+<!-- 
+	
+	  <action name="employeeList" method="getEmployeelist">
+	 	 <result name="success">employeeList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  <action name="editAddEmployee" method="editAddEmployee">
+	 	 <result name="success">addEmployee.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  <action name="addEmployee" method="addEmployee">
+	 	 <result name="success" type="redirect">employeeList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	    <action name="findEmployeeData" method="findEmployeeData">
+	 	 <result name="success" >editEmployee.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  	    <action name="updateEmployee" method="updateEmployee">
+	 	 <result name="success" type="redirect">employeeList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  
+	   <action name="employeeDetails" method="employeeDetails">
+	 	 <result name="success" >employeeDetails.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="getDeptInf" method="getDeptInf">
+	 	 <result name="success">ajaxEditAddemployeeDeptInfo.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	   -->
+	  
+	  
+  </default_action_class>
+</mvc>

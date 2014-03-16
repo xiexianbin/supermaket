@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/superMarket" class="com.supermarket.action.SuperMarketAction">  
+	
+	  <action name="logout" method="logout">
+	 	 <result name="success" type="redirect">../login.htm</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="main" method="main">
+	 	 <result name="success">right.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+		
+  </default_action_class>
+</mvc>

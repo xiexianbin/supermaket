@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/dailyManager/record" class="com.record.CheckAction">  
+	
+	  <action name="CheckList" method="listcheck">
+	 	 <result name="success">CheckList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	   <action name="CheckInsert" method="CheckInsert">
+  <result name="success" type="redirect">CheckList.action</result>
+    <result name="error" type="redirect" >error.jsp</result>
+  </action>
+  
+   <action name="UploadFile" method="UploadFile">
+  <result name="success" type="redirect">CheckList.action</result>
+    <result name="error" type="redirect" >error.jsp</result>
+  </action>
+  
+  <action name="findCheck" method="findCheck">
+  <result name="success">EditCheck.jsp</result>
+    <result name="error" type="redirect" >error.jsp</result>
+  </action>
+  
+  
+  <action name="updateCheck" method="updateCheck">
+  <result name="success" type="redirect">CheckList.action</result>
+    <result name="error" type="redirect" >error.jsp</result>
+  </action>  
+  
+   <action name="exportToxls" method="exportToxls">
+  <result name="success" type="redirect">CheckList.action</result>
+    <result name="error" type="redirect" >error.jsp</result>
+  </action>  
+  
+  
+  <action name="employeeList" method="listEmployee">
+  <result name="success">insertUserCheck.jsp</result>
+    <result name="error" type="redirect" >error.jsp</result>
+  </action>  
+  
+  </default_action_class>
+ </mvc>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+ <default_action_class namespace="/afterSale" class="com.after.action.afterSaleAction">  
+ 
+         <action name="giftList" method="listGift">
+	 	 <result name="success">listGift.jsp</result>
+	     <result name="error" type="redirect" >error.jsp</result>
+	     </action>
+ 
+        <action name="vipGiftList" method="vipGiftList">
+	   <result name="success">vipListGift.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	    </action>
+ 
+ 
+          <action name="addReturn" method="addReturn">
+	 	  <result name="success" type="redirect">afterSale.do</result>
+	      <result name="error" type="redirect" >error.jsp</result>
+	      </action> 
+	  
+	  
+	  
+	  
+	  
+	   <action name="afterSale" method="afterSale">
+	 	 <result name="success">afterSale.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	   <action name="afterSale1" method="afterSale1">
+	 	 <result name="success">MyJsp.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	   <action name="record" method="record">
+	 	 <result name="success">record.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	   <action name="details" method="details">
+	 	 <result name="success">detailsList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="giftRecord" method="giftRecord">
+	 	 <result name="success">giftRecord.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	   <action name="giftDetails" method="giftDetails">
+	 	 <result name="success">giftDetailsList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	   <action name="selectById" method="selectById">
+	 	 <result name="success">selectById.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  
+	   <action name="selectByTime" method="selectByTime">
+	 	 <result name="success">selectById.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+  <action name="selectReturnById" method="selectReturnById">
+	 	 <result name="success">selectReturnById.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+  <action name="selectReturnByTime" method="selectReturnByTime">
+	 	 <result name="success">selectReturnById.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+ <action name="giftDuihuan" method="giftDuihuan">
+	 	 <result name="success" type="redirect">giftList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  <action name="deleteAll" method="deleteAll">
+	 	<result name="success" type="redirect">record.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	   <action name="deleteAll1" method="deleteAll1">
+	 	<result name="success" type="redirect">giftRecord.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+ </default_action_class>
+
+
+</mvc>
+
+

@@ -1,0 +1,67 @@
+body{
+	color: white;
+	font-size:12px;
+}
+
+#main {
+	padding-top:104px;
+	font-size: 12px;
+	background-image: url(../images/bg_login.png);
+	background-position: bottom;
+	background-repeat: repeat-x;
+	background-color: #A2D5F0;
+	height:600px;
+	width:auto;
+}
+#maindiv{
+
+	width: 800px;
+	height: 496px;
+	margin:0px auto;
+	background-image: url(../images/login_main.png);
+}
+#login{
+
+	padding-top:220px;
+	padding-left:340px;
+	height:220px;
+	width:440px;
+	padding-bottom:56px;
+}
+#login .textbox {
+	width: 180px;
+	border: 1px solid #0197BC;
+
+}
+
+#login .codebox{
+	width:80px;
+	border: 1px solid #0197BC;
+}
+
+#root{
+	width:800px;
+	height:104px;
+	margin:0px auto;
+	background-image: url(../images/login_root.png);
+}
+
+
+
+a{
+	text-decoration:none;
+}
+a:link{
+	color: white;
+	text-decoration: none;
+}/* 未访问的链接 */
+a:visited {
+	color: white;
+}	/* 已访问的链接 */
+a:hover {
+	color: white;
+	text-decoration: none;
+}	/* 鼠标移动到链接上 */
+a:active {
+	color: white;
+}	/* 选定的链接 */

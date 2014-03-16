@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/dailyManager/gift" class="com.gift.GiftAction">  
+	<!-- 查询出所有礼品、积分的对应关系 -->
+	  <action name="giftList" method="listGift">
+	 	 <result name="success">listGift.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  
+	  <action name="addOne" method="addOne">
+	 	<result name="success">addOne.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+   <action name="addOne1" method="addOne1">
+	 	<result name="success" type="redirect">giftList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	   <action name="addOne3" method="addOne3">
+	 	<result name="success">addOnes.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+
+	  
+	  
+  <action name="selectOne" method="selectOne">
+	 	<result name="success">update.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+  <action name="updateOne" method="updateOne">
+	 	<result name="success" type="redirect">giftList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="selectProduct" method="selectProduct">
+	 	<result name="success">addOne.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	   <action name="deleteAll" method="deleteAll">
+	 	<result name="success" type="redirect">giftList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+  </default_action_class>
+ </mvc>

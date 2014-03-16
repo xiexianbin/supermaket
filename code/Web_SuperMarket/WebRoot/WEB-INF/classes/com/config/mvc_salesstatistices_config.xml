@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/finance/productSale" class="com.productSale.SalesAction">  
+
+	  <action name="salesList" method="getSalesList">
+	 	<result name="success">SalesList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	
+	 <action name="Pictury" method="getPictury">
+	 	<result name="success">SalesPicturyBar.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	   <action name="List" method="getList">
+	 	<result name="success">List.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+  </default_action_class>
+</mvc>

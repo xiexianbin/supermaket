@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/dailyManager/supplier" class="com.supplier.SupplierAction">  
+	<!-- 查询所有供应商信息 -->
+	  <action name="supplierList" method="listSupplier">
+	 	 <result name="success">supplierList.jsp</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>
+	  <!-- 添加前为供应商产生编号 -->
+	  <action name="editAddSupplier" method="editAddSupplier">
+	 	 <result name="success">addSupplier.jsp</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>
+	  <!-- 添加供应商信息 -->
+	  <action name="addNewSupplier" method="addNewSupplier">
+	 	 <result name="success" type="redirect">supplierList.action</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>
+	  <!-- 查看供应商详细信息 -->
+	  <action name="oneSupplierInfo" method="oneSupplierInfo">
+	 	 <result name="success">oneSupplierInfo.jsp</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>
+	  <!-- 修改前编辑供货商信息 -->
+	  <action name="editSupplier" method="editSupplier">
+	 	 <result name="success">updateOneSupplierInfo.jsp</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>
+	   <!-- 修改供货商信息 -->
+	  <action name="updateSupplier" method="updateSupplier">
+	 	 <result name="success" type="redirect">supplierList.action</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>
+	 
+  </default_action_class>
+</mvc>

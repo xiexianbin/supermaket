@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/dailyManager/storage" class="com.storage.StorageAction">  
+	<!-- 列出所有仓库信息 -->
+	  <action name="storageList" method="listStorage">
+	 	 <result name="success">storageList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- 添加仓库前查询，并为其生成默认编号 -->
+	  <action name="editAddNewStorage" method="editAddNewStorage">
+	 	 <result name="success">addStorage.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- 添加 -->
+	   <action name="AddNewStorage" method="AddNewStorage">
+	 	 <result name="success" type="redirect">storageList.action</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	    <!-- 修改前查询该仓库的详细信息 -->
+	   <action name="editStorage" method="editStorage">
+	 	 <result name="success">editStorage.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	    <!-- 修改仓库信息 -->
+	   <action name="updateStorage" method="updateStorage">
+	 	 <result name="success" type="redirect">storageList.action</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+  </default_action_class>
+</mvc>

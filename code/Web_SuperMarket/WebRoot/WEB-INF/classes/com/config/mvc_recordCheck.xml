@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/dailyManager/recordcheck" class="com.recordcheck.RecordcheckAction">  
+	  
+   <action name="dateList" method="dateList">
+	 	 <result name="success">dateList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  <action name="AllRecord" method="AllRecord">
+	 	 <result name="success">recordList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="workNormal" method="workNormal">
+	 	 <result name="success">workNormal.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  
+	  <action name="workLate" method="workLate">
+	 	 <result name="success">workLate.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  <action name="workEarly" method="workEarly">
+	 	 <result name="success">workEarly.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  <action name="workAdd" method="workAdd">
+	 	 <result name="success">workAdd.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  <action name="workAbsence" method="workAbsence">
+	 	 <result name="success">workAbsence.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+  </default_action_class>
+ </mvc>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+	<default_action_class namespace="/dailyManager/goods"
+		class="com.goods.ProductAction">
+
+		<action name="productList" method="productList">
+			<result name="success">productList.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+
+		<action name="insertProduct" method="insertProduct">
+			<result name="success" type="redirect">productList.do</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+
+		<action name="selectOneProduct" method="selectOneProduct">
+			<result name="success">productUpdate.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+
+		<action name="updateProduct" method="updateProduct">
+			<result name="success" type="redirect">productList.do</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+
+		<action name="selectOne" method="selectOneProduct">
+			<result name="success">oneProduct.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+
+		<action name="UploadFile" method="UploadFile">
+			<result name="success" type="redirect">productList.action</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+
+
+		<action name="deleteSelect" method="deleteSelect">
+			<result name="success" type="redirect">productList.action</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+
+		<action name="productInsert1" method="productInsert1">
+			<result name="success" >productInsert.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+
+	</default_action_class>
+</mvc>

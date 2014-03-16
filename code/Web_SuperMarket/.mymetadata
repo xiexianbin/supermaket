@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Web_SuperMarket"
+  id="myeclipse.1383027873296"
+  context-root="/Web_SuperMarket"
+  j2ee-spec="5.0"
+  archive="Web_SuperMarket.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

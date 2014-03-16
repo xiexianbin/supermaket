@@ -1,0 +1,15 @@
+<mvc >
+  <default_action_class namespace="/finance/returnProductSale" class="com.returnProductSale.returnAction">  
+	
+	  <action name="returnProductSale" method="getreturnSalesList">
+	 	<result name="success">returnProductSale.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	
+	  <action name="Pictury" method="getreturnSalesPictury">
+	 	<result name="success">SalesListPictury.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	
+	</default_action_class>
+	</mvc>

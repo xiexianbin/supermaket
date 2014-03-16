@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/finance/salary" class="com.salary.WagesAction">  
+	
+	  <action name="addVip" method="addVip">
+	 	 <result name="success" type="redirect">vipList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  <action name="Ajax" method="Ajax">
+	 	 <result name="success">kong.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="addSalary" method="addSalary">
+	 	 <result name="success" type="redirect">sList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="sList" method="sList">
+	 	 <result name="success">salist.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="onewages" method="onewages">
+	 	 <result name="success">onewages.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+  </default_action_class>
+ </mvc>

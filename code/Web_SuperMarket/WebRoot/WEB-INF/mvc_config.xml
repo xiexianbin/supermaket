@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+
+	<!-- *********************************** 登陸界面 ******************************** -->
+	<import file="mvc_superMarket_config.xml"/>
+	<!-- *********************************** 销售管理 ******************************** -->
+	<import file="mvc_sales_config.xml"/>
+	<import file="mvc_salesvip_config.xml"/>	
+	<!-- *********************************** 超市商品管理 ******************************** -->
+	<import file="mvc_goods_config.xml"/>
+	<!-- *********************************** 日常管理 ******************************** -->
+	<!-- 货架管理 -->
+	<import file="mvc_dailyManager_shelf_config.xml"/>
+	<!-- 值班管理  -->
+	<import file="mvc_dailyManager_duty_config.xml"/>
+	<!-- 部门管理 -->
+	<import file="mvc_dailyManager_part_config.xml"/> 
+	<!-- 每日提醒 -->
+	<import file="mvc_notice_config.xml"/>
+	<!-- 查看考勤 -->
+	<!--  查看考勤 --> 
+  <import file="mvc_recordCheck.xml" /> 
+
+	<!-- 商品管理 -->
+	<import file="mvc_product_config.xml"/>
+	<!-- 仓库管理 -->
+	<import file="mvc_dailyManager_storage_config.xml"/>
+	<!-- 供应商管理 -->
+	<import file="mvc_dailyManager_supplier_config.xml"/>
+	<!-- 考勤管理 -->
+	<import file="mvc_dailyManager_check_config.xml"/>
+	<!-- 员工管理 -->
+	<import file="mvc_dailyManager_employee_config.xml"/>
+	<!-- 商品类别管理 -->
+ 	<import file="mvc_dailyManager_goodsType_config.xml"/> 
+ 	<!-- 礼品管理 -->
+ 	<import file="mvc_gift_config.xml"/>
+	<!-- *********************************** 财务管理 ******************************** -->
+	<!-- 营业额统计 -->
+	<import file="mvc_turnover_config.xml"/> 
+	<!-- 收入 管理-->
+	<import file="mvc_inexpense_config.xml"/> 
+	<!-- 支出 管理-->
+	<import file="mvc_outexpense_config.xml"/> 
+	<!-- 采购 管理-->
+	<import file="mvc_purchase_config.xml"/> 
+	<!-- 采购 退货 管理-->
+	<import file="mvc_returnPurch_config.xml"/> 
+	<!-- 商品销售排行-->
+	<import file="mvc_salerank_config.xml"/>
+	<!-- 商品销售统计-->
+	<import file="mvc_salesstatistices_config.xml"/>
+	<!-- 员工营业额统计-->
+	<import file="mvc_finance_empSaleStatistics_config.xml"/> 
+	<!-- 商品退货销售统计-->
+	<import file="mvc_salesstatistices_return_config.xml"/> 
+	<!-- 工资管理-->
+	<import file="mvc_finance_salary_config.xml"/> 
+	<!-- *********************************** 售后管理 ******************************** -->
+	<import file="mvc_afterSale_config.xml"/>
+	<!-- *********************************** 进货管理 ******************************** -->
+	<import file="mvc_purch_config.xml"/>
+	<!-- *********************************** 库存管理 ******************************** -->
+	<import file="mvc_storage_in_config.xml"/>
+	<import file="mvc_storage_out_config.xml"/>
+	<import file="mcv_alarm_config.xml"/>
+	<import file="mcv_store_config.xml"/>
+	<import file="mcv_storeAlarm_config.xml"/>
+	<!-- *********************************** 系统设置 ******************************** -->
+	<import file="mvc_systemConfig_config.xml"/>
+</mvc>

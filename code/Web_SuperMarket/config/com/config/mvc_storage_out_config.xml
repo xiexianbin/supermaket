@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+   <default_action_class namespace="/storage" class="com.storage.action.OutStorageAction"> 
+	
+	  <action name="outStorageList" method="outStorageList">
+	 	 <result name="success">outStorageList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	   <action name="addOutStorage" method="addOutStorage">
+	 	 <result name="success" type="redirect">outStorageList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	   <action name="findOutStorage" method="findOutStorage">
+	 	 <result name="success">editOutStorage.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="updateOutStorage" method="updateOutStorage">
+	 	 <result name="success" type="redirect" >outStorageList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="seeDetil" method="findOutStorage">
+	 	 <result name="success">detilOut.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="selectOther1" method="selectOther">
+	 	 <result name="success">addOutStorage.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+  </default_action_class>
+</mvc>

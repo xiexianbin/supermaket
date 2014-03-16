@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/finance/inexpense" class="com.inexpense.InexpenseAction">  
+	<!-- 收入信息列表 -->
+	  <action name="inexpenseList" method="inexpenseList">
+	 	 <result name="success">inexpenseList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- 插入收入信息 -->
+	   <action name="insertInexpense" method="insertInexpense">
+	 	 <result name="success" type="redirect">inexpenseList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- 查找单个收入信息 -->
+	  <action name="selectOneInexpense" method="selectOneInexpense">
+	 	 <result name="success">inexpenseUpdate.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- 更新收入信息 -->
+	  <action name="updateInexpense" method="updateInexpense">
+	 	 <result name="success" type="redirect">inexpenseList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <!-- 插入收入信息转发数据 -->
+	  <action name="inexpenseInsert1" method="inexpenseInsert1">
+	 	 <result name="success">inexpenseInsert.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- 删除选择的收入信息 -->
+	  <action name="deleteSelect" method="deleteSelect">
+			<result name="success" type="redirect">inexpenseList.do</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		
+		<action name="selectTotalIn" method="selectTotalIn">
+			<result name="success">totalIn.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+ </default_action_class>
+ </mvc>
+

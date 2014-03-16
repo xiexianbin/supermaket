@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/finance/salerank" class="com.SaleRank.SaleRankAction">  
+	 
+	  <action name="allproType" method="allproType">
+	 	 <result name="success">salerankMain.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  <action name="oneproType" method="oneproType">
+	 	 <result name="success">oneType.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	 
+	  
+	  <action name="checkTu" method=" checkTu">
+	 	 <result name="success">bingTu.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	
+  </default_action_class>
+</mvc>

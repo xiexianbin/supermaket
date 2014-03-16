@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/purch" class="com.purch.action.PurchAction">  
+	
+	<action name="ProductBean" method="findProduct">
+	 	 <result name="success" >temp.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	    
+	  </action>
+	  <action name="SupplierBean" method="findSupplier">
+	 	 <result name="success" >temp.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <action name="EmployeeBean" method="findEmployee">
+	 	  <result name="success" >temp.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	    
+	  </action>
+	
+	  
+	  <action name="purchList" method="purchList">
+	 	 <result name="success">purchList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="insertPurch" method="insertPurch">
+	 	 <result name="success" type="redirect">purchList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="purchUpdate" method="purchUpdate">
+	 	 <result name="success" type="redirect">purchList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	 
+	  <action name="findPurch" method="findPurch">
+	 	 <result name="success" >purchUpdate.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="deletePurch" method="deletePurch">
+	 	 <result name="success" type="redirect" >purchList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <action name="excelIn" method="excel">
+	 	 <result name="success" type="redirect" >purchList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <action name="excelInn" method="excelReturn">
+	 	 <result name="success" type="redirect" >returnList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <action name="returnList" method="returnList">
+	 	 <result name="success">returnList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="insertReturn" method="insertReturn">
+	 	 <result name="success" type="redirect">returnList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="returnUpdate" method="returnUpdate">
+	 	 <result name="success" type="redirect">returnList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="findReturn" method="findReturn">
+	 	 <result name="success" >returnUpdate.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	   <action name="deleteReturn" method="deleteReturn">
+	 	 <result name="success" type="redirect" >returnList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  
+	  
+  
+  </default_action_class>
+ </mvc>

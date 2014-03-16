@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+ <default_action_class namespace="/storage" class="com.storage.action.AlarmAction">  
+	
+	  <action name="alarmList" method="alarmList">
+	 	 <result name="success">alarmList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>addAlarm
+	  
+	 <action name="addAlarm" method="addAlarm">
+	 	 <result name="success" type="redirect">alarmList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	   <action name="deleteAlarm" method="deleteAlarm">
+	 	 <result name="success" type="redirect">alarmList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="findAlarm" method="findAlarm">
+	 	 <result name="success">editAlarm.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	 
+	 <action name="updateAlarm" method="updateAlarm">
+	 	 <result name="success" type="redirect">alarmList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	   <action name="alarmDetil" method="findAlarm">
+	 	 <result name="success">alarmDetil.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	 
+ </default_action_class>
+</mvc>

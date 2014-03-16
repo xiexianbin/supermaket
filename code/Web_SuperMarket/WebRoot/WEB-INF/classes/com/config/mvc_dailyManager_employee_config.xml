@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mvc >
+  <default_action_class namespace="/dailyManager/employee" class="com.employee.EmployeeAction">  
+	
+	  <action name="employeeList" method="getEmployeelist">
+	 	 <result name="success">employeeList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  <!-- 点击添加新员工走的编辑界面 -->
+	  <action name="editAddEmployee" method="editAddEmployee">
+	 	 <result name="success">addEmployee.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  <action name="addEmployee" method="addEmployee">
+	 	 <result name="success" type="redirect">employeeList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	    <action name="findEmployeeData" method="findEmployeeData">
+	 	 <result name="success" >editEmployee.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  	    <action name="updateEmployee" method="updateEmployee">
+	 	 <result name="success" type="redirect">employeeList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  
+	   <action name="employeeDetails" method="employeeDetails">
+	 	 <result name="success" >employeeDetails.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <!-- ajax -->
+	  <action name="getDeptInf" method="getDeptInf">
+	 	 <result name="success">ajaxEditAddemployeeDeptInfo.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  
+  </default_action_class>
+</mvc>

@@ -1,0 +1,624 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+<title>分页</title>
+<style type="text/css" title="currentStyle">
+			@import "../../MyOffice/fy/demos.css";
+		</style>
+		<script type="text/javascript" language="javascript" src="../../MyOffice/fy/jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="../../MyOffice/fy/jquery.dataTables.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$('#example').dataTable( {
+					"sPaginationType": "full_numbers"
+				} );
+			} );
+		</script>
+</head>
+<body id="dt_example" class="example_alt_pagination">
+<table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
+	<thead>
+		<tr>
+		  <th width="8%">员工编号</th>
+			<th width="8%">员工姓名</th>
+			<th width="5%">状态</th>
+			<th width="14%">起始日期</th>
+			<th width="12%">结束日期</th>
+			<th width="10%">合同编号</th>
+			<th width="10%">合同种类</th>
+			<th width="9%">合同期限</th>
+			<th width="24%">备注</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="gradeA">
+		   <td>1107</td>
+			<td>张会斌</td>
+			<td>在职</td>
+			<td>2012/12/23</td>
+			<td class="center">4</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">X</td>
+		</tr>
+        	<tr class="gradeA">
+        	<td>1108</td>
+			<td>张三</td>
+			<td>在职</td>
+			<td>2012/12/23</td>
+			<td class="center">2020/12/23</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">在职</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1120</td>
+			<td>李四</td>
+			<td>在职</td>
+			<td>2012/12/23</td>
+			<td class="center">2020/12/23</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">C</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1121</td>
+			<td>二麻子</td>
+			<td>在职</td>
+			<td>2012/12/23</td>
+			<td class="center">5.5</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1122</td>
+			<td>Trident</td>
+			<td>在职</td>
+			<td>2012/12/23</td>
+			<td class="center">6</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1123</td>
+			<td>Trident</td>
+			<td>在职</td>
+			<td>2012/12/23</td>
+			<td class="center">7</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1124</td>
+			<td>Trident</td>
+			<td>在职</td>
+			<td>Win XP</td>
+			<td class="center">6</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1125</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 98+</td>
+			<td class="center">1.7</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1126</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 98+ </td>
+			<td class="center">1.8</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1137</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 98</td>
+			<td class="center">1.8</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1128</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 2</td>
+			<td class="center">1.9</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1129</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>OSX.2+</td>
+			<td class="center">1.8</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1130</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>OSX.3+</td>
+			<td class="center">1.8</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1131</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>&nbsp;</td>
+			<td class="center">1.7</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1132</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 98SE+</td>
+			<td class="center">1.7</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1133</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 98+ / OSX.2+</td>
+			<td class="center">1.8</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1134</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">1</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1135</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">1.1</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1136</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">1.2</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1137</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">1.3</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1138</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">1.4</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1139</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">1.5</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1140</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">1.6</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1141</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 98+ / OSX.1+</td>
+			<td class="center">1.7</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>11421</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 98+ / OSX.1+</td>
+			<td class="center">1.8</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1143</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Win 98+ / OSX.2+</td>
+			<td class="center">1.8</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1144</td>
+			<td>Gecko</td>
+			<td>在职</td>
+			<td>Gnome</td>
+			<td class="center">1.8</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1145</td>
+			<td>Webkit</td>
+			<td>在职</td>
+			<td>OSX.3</td>
+			<td class="center">125.5</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1156</td>
+			<td>Webkit</td>
+			<td>在职</td>
+			<td>OSX.3</td>
+			<td class="center">312.8</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1155</td>
+			<td>Webkit</td>
+			<td>在职</td>
+			<td>OSX.4+</td>
+			<td class="center">419.3</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>73475</td>
+			<td>Webkit</td>
+			<td>在职</td>
+			<td>OSX.4+</td>
+			<td class="center">522.1</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>5435</td>
+			<td>Webkit</td>
+			<td>在职</td>
+			<td>OSX.4+</td>
+			<td class="center">420</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>6436</td>
+			<td>Webkit</td>
+			<td>在职</td>
+			<td>iPod</td>
+			<td class="center">420.1</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>34646</td>
+			<td>Webkit</td>
+			<td>在职</td>
+			<td>S60</td>
+			<td class="center">413</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>2354362</td>
+			<td>Presto</td>
+			<td>在职</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">-</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>763763</td>
+			<td>Presto</td>
+			<td>在职</td>
+			<td>Win 95+ / OSX.2+</td>
+			<td class="center">-</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>76537</td>
+			<td>Presto</td>
+			<td>在职</td>
+			<td>Win 95+ / OSX.2+</td>
+			<td class="center">-</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>76376</td>
+			<td>Presto</td>
+			<td>在职</td>
+			<td>Win 95+ / OSX.2+</td>
+			<td class="center">-</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>6546547</td>
+			<td>Presto</td>
+			<td>在职</td>
+			<td>Win 95+ / OSX.3+</td>
+			<td class="center">-</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>43265</td>
+			<td>Presto</td>
+			<td>在职</td>
+			<td>Win 88+ / OSX.3+</td>
+			<td class="center">-</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>6432</td>
+			<td>Presto</td>
+			<td>在职</td>
+			<td>Win 88+ / OSX.3+</td>
+			<td class="center">-</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>4523</td>
+			<td>Presto</td>
+			<td>在职</td>
+			<td>Wii</td>
+			<td class="center">-</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>5423</td>
+			<td>Presto</td>
+			<td>在职</td>
+			<td>N800</td>
+			<td class="center">-</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>54235</td>
+			<td>Presto</td>
+			<td>在职r</td>
+			<td>Nintendo DS</td>
+			<td class="center">8.5</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">C/A<sup>1</sup></td>
+		</tr>
+		<tr class="gradeA">
+		  <td>35423</td>
+			<td>KHTML</td>
+			<td>在职</td>
+			<td>KDE 3.1</td>
+			<td class="center">3.1</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">C</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>453532</td>
+			<td>KHTML</td>
+			<td>在职</td>
+			<td>KDE 3.3</td>
+			<td class="center">3.3</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>111334</td>
+			<td>KHTML</td>
+			<td>在职</td>
+			<td>KDE 3.5</td>
+			<td class="center">3.5</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1111644</td>
+			<td>Tasman</td>
+			<td>在职</td>
+			<td>Mac OS 8-9</td>
+			<td class="center">-</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">X</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1162</td>
+			<td>Tasman</td>
+			<td>在职</td>
+			<td>Mac OS 7.6-9</td>
+			<td class="center">1</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">C</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1161</td>
+			<td>Tasman</td>
+			<td>在职</td>
+			<td>Mac OS 8-X</td>
+			<td class="center">1</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">C</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1160</td>
+			<td>Misc</td>
+			<td>在职</td>
+			<td>Embedded devices</td>
+			<td class="center">-</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">&nbsp;</td>
+			<td class="center">C</td>
+		</tr>
+		<tr class="gradeA">
+		  <td>1109</td>
+			<td>赵鹏飞</td>
+			<td>在职</td>
+			<td>2012/10/12</td>
+			<td class="center">2055/12/12</td>
+			<td class="center">12</td>
+			<td class="center">fdsh </td>
+			<td class="center">50年</td>
+			<td class="center">公元2012年</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+		  <th>员工编号</th>
+		  <th>员工姓名</th>
+			<th>状态</th>
+			<th>起始时间</th>
+			<th>结束时间</th>
+			<th>合同编号</th>
+			<th>合同种类</th>
+			<th>合同期限</th>
+			<th>备注</th>
+		</tr>
+	</tfoot>
+</table>
+
+</body>
+</html>

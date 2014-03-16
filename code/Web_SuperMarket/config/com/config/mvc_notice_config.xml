@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 此配置文件为样例，copy请删除本句话 -->
+<mvc >
+  <default_action_class namespace="/dailyManager/notice" class="com.notice.NoticeAction">  
+	
+	  <action name="insertNotice" method="insertNotice">
+	 	 <result name="success" type="redirect">noticeList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	 
+	  <action name="upload" method="upload">
+	 	 <result name="success" type="redirect">insertNotice.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	   <action name="noticeList" method="noticeList">
+	 	 <result name="success">noticeList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="noticeOne" method="noticeOne">
+	 	 <result name="success">noticeOne.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	 
+	  <action name=" selectDept" method="selectDept">
+	 	 <result name="success">deptnoticeList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+  
+  </default_action_class>
+ </mvc>

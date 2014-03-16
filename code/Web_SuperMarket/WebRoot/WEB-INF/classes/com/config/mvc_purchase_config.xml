@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+ <default_action_class namespace="/finance/purchase" class="com.purchase.PurchaseAction">  
+	
+	  <action name="purchaseList" method="purchaseList">
+	 	 <result name="success">purchaseList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="PurchaseOneList" method="PurchaseOneList">
+	 	 <result name="success">PurchaseOneList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="purchaseBar" method="purchaseBar">
+	 	 <result name="success">purchaseBar.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+ </default_action_class>
+</mvc>
+

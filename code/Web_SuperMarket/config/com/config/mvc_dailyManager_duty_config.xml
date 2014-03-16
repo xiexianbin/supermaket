@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/dailyManager/duty" class="com.duty.DutyAction">  
+	
+	  <!-- 值班列表 -->
+	  <action name="dutyList" method="dutyList">
+	 	 <result name="success">dutyList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- ajax部门值班列表 -->
+	  <action name="dutyDeptList" method="dutyDeptList">
+	 	 <result name="success">ajax_part_dutyList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <!-- ajax部门值班列表 -->
+	  <action name="addDuty" method="addDuty">
+	 	 <result name="success">addDuty.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+		
+	  <!-- ajax通过员工编号获取员工的姓名部门等基本信息 -->
+	  <action name="getEmployeeInf" method="getEmployeeInf">
+	 	 <result name="success">empInf.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+		  <!-- 添加值日信息 -->
+	  <action name="addDutyMethod" method="addDutyMethod">
+	 	 <result name="success" type="redirect">dutyList.action</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>addDutyMethod
+  </default_action_class>
+ </mvc>

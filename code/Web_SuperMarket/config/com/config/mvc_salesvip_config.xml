@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/sales" class="com.sales.action.VipAction">  
+	
+	  <action name="addVip" method="addVip">
+	 	 <result name="success" type="redirect">vipList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  
+	  <action name="vipList" method="vipList">
+	 	 <result name="success">viplist.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	   <action name="selectOne" method="selectOne">
+	 	 <result name="success">onevip.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="updateVip" method="updateVip">
+	 	 <result name="success">updatevip.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="addVipValue" method="addVipValue">
+	 	 <result name="success" type="redirect">vipList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+  
+  </default_action_class>
+ </mvc>

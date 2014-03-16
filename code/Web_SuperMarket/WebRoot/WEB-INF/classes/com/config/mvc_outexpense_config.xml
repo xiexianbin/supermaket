@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/finance/outexpense" class="com.outexpense.OutexpenseAction">  
+	<!-- 支出列表 -->
+	  <action name="outexpenseList" method="outexpenseList">
+	 	 <result name="success">outexpenseList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- 插入支出信息 -->
+	   <action name="insertOutexpense" method="insertOutexpense">
+	 	 <result name="success" type="redirect">outexpenseList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- 查找单个支出信息 -->
+	  <action name="selectOneOutexpense" method="selectOneOutexpense">
+	 	 <result name="success">outexpenseUpdate.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- 更新支出信息 -->
+	  <action name="updateOutexpense" method="updateOutexpense">
+	 	 <result name="success" type="redirect">outexpenseList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- 插入支出信息转发数据 -->
+	  <action name="outexpenseInsert1" method="outexpenseInsert1">
+	 	 <result name="success">outexpenseInsert.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- 删除选择的支出信息 -->
+	  <action name="deleteSelect" method="deleteSelect">
+			<result name="success" type="redirect">outexpenseList.do</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+		
+		
+		 <action name="selectTotalOut" method="selectTotalOut">
+			<result name="success">totalOut.jsp</result>
+			<result name="error" type="redirect">error.jsp</result>
+		</action>
+ </default_action_class>
+ </mvc>

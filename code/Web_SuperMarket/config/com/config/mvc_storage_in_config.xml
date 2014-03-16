@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mvc>
+ <default_action_class namespace="/storage" class="com.storage.action.InStorageAction">  
+	
+	  <action name="inStorageList" method="inStorageList">
+	 	 <result name="success">inStorageList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	   <action name="addInStorage" method="addInStorage">
+	 	 <result name="success" type="redirect">inStorageList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="findInStorage" method="findInStorage">
+	 	 <result name="success">editInStorage.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="updateInStorage" method="updateInStorage">
+	 	 <result name="success" type="redirect">inStorageList.do</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>seeDetilIn
+	  
+	  <action name="seeDetilIn" method="findInStorage">
+	 	 <result name="success">detilIn.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="selectOther" method="selectOther">
+	 	 <result name="success">addInStorage.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action> 
+	  
+	  <action name="getProductInf" method="getProductInf">
+	 	 <result name="success">proInf.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+  </default_action_class>
+  
+ </mvc>

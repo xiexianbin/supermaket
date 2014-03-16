@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mvc >
+  <default_action_class namespace="/dailyManager/goodsType" class="com.goodsType.GoodsTypeAction">  
+	
+	  <action name="goodsTypeList" method="getGoodsTypelist">
+	 	 <result name="success">goodsTypeList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  
+	  
+	  	  <action name="addGoodsType" method="addGoodsType">
+	 	 <result name="success" type="redirect">goodsTypeList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	    <action name="findGoodstypeData" method="findGoodstypeData">
+	 	 <result name="success" >editgoodsType.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  	    <action name="updateGoodsType" method="updateGoodsType">
+	 	 <result name="success" type="redirect">goodsTypeList.do</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  
+	   <action name="goodsTypeDetails" method="goodsTypeDetails">
+	 	 <result name="success" >goodsTypeDetails.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+  </default_action_class>
+</mvc>

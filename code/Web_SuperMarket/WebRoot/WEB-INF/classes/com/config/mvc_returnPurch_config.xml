@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+ <default_action_class namespace="/finance/returnPurch" class="com.returnPurch.PurchaseAction">  
+	
+	  <action name="returnPurchaseList" method="returnPurchaseList">
+	 	 <result name="success">returnPurchaseList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="PurchaseOneList" method="PurchaseOneList">
+	 	 <result name="success">returnPurchaseOneList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="purchaseBar" method="purchaseBar">
+	 	 <result name="success">returnPurchaseBar.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+ </default_action_class>
+</mvc>
+

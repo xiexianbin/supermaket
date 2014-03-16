@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+ <default_action_class namespace="/finance/turnover" class="com.turnover.TurnoverAction">  
+	
+	  <!-- 营业额列表 -->
+	  <action name="turnoverList" method="turnoverList">
+	 	 <result name="success">turnoverList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  <!-- 柱状图查看 -->
+	  <action name="barGraph" method="barGraph">
+	 	 <result name="success">barGraph.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+ </default_action_class>
+</mvc>
+

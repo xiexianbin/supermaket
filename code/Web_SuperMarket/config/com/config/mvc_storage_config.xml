@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/storage" class="com.storage.action.InStorageAction">  
+	
+	  <action name="inStorageList" method="inStorageList">
+	 	 <result name="success">inStorageList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+  
+  </default_action_class>
+ </mvc>

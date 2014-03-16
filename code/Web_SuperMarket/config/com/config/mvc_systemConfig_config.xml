@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/systemConfig" class="com.systemConfig.action.SystemConfigAction">  
+	
+	   <action name="checkPassword" method="checkPassword">
+	 	 <result name="success">updatePassword.jsp</result>
+	     <result name="error">updatePassword.jsp</result>
+	  </action>
+	
+	  <action name="updatePassword" method="updatePassword">
+	 	 <result name="success">updatePassword.jsp</result>
+	    <result name="error">updatePassword.jsp</result>
+	  </action>
+	  
+	    <action name="findEmployee" method="findEmployee">
+	 	 <result name="success">stateManager.jsp</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>
+	  
+	   <action name="updateState" method="updateState">
+	 	 <result name="success" type="redirect">stateManager.jsp</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>
+  </default_action_class>
+</mvc>

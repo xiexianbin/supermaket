@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc >
+  <default_action_class namespace="/sales" class="com.sales.action.SalesAction">  
+	
+	  <action name="salesList" method="getSalesList">
+	 	<result name="success">salesList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="findSalesData" method="findSalesData">
+	 	<result name="success">editSalesData.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="salesDetails" method="salesDetails">
+	 	<result name="success">salesDetails.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  <action name="inquireProductData" method="inquireProductData">
+	 	<result name="success">onSaleLeft.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  
+	  
+	  <action name="addToBuyList" method="addToBuyList">
+	 	<result name="success">onSaleRight.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="clearList" method="clearList">
+	 	<result name="success">onSaleRight.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  
+	  <action name="deletePro" method="deletePro">
+	 	<result name="success">onSaleRight.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+	  <action name="finishOneDeal" method="finishOneDeal">
+	 	<result name="success">onSaleRight.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  
+  
+  </default_action_class>
+ </mvc>

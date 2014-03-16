@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>超市管理系统登录</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=GBK">
+<LINK href="css/login.css" type=text/css rel=stylesheet>
+
+
+</HEAD>
+ <script type="text/javascript">
+  	function refresh(){
+		document.getElementById("id_code").src="image?"+Math.random();
+		//loginForm.code.src="image?"+Math.random();
+	}
+	function checkElements(){
+	    var userId=document.getElementById("userId");
+	    var userPass=document.getElementById("userPass");
+	    var id_Verification_code=document.getElementById("id_Verification_code")
+	    if(userId.value==""||userId.value.length!=8){
+	        document.getElementById("a2").innerHTML="";
+	        document.getElementById("a1").innerHTML="*用户名错误";
+	        document.getElementById("userId").focus();
+	        return false;
+	    }
+	    if(userPass.value==""||userPass.value.length<3){
+	        document.getElementById("a1").innerHTML="";
+	        document.getElementById("a2").innerHTML="*密码错误";
+	        document.getElementById("userPass").focus();
+	        return false;
+	    }
+	    
+	    if(userPass.value==""||userPass.value.length<3){
+	        document.getElementById("a1").innerHTML="";
+	        document.getElementById("a2").innerHTML="*密码错误";
+	        document.getElementById("userPass").focus();
+	        return false;
+	    }
+	    
+	    if(id_Verification_code.value==""){
+	        document.getElementById("a1").innerHTML="";
+	        document.getElementById("a2").innerHTML="";
+	        document.getElementById("id_Verification_code").focus();
+	        alert("验证码不能为空！！！");
+	        return false;
+	    }
+	    
+	    
+	        
+	   return true;
+	    
+	}
+  </script>
+<BODY>
+
+	<DIV id="main">
+		<div id="maindiv">
+			<div id="login">
+			<form action="mvcCheckLogin" onsubmit="return checkElements()" method="post">
+				<table border="0" cellpadding="0" cellspacing="0">
+				  <tr height=40>
+					<td width="15%">用户名:</td>
+					<td align="left" width="45%"><input class='textbox' id='userId' name='userId'></td>
+					<td align="left"><span id="a1"></span></td>
+				  </tr>
+				  <tr height=40>
+					<td width="15%">密&nbsp;&nbsp;码:</td>
+					<td align="left" width="45%"><input class='textbox' id='userPass' type='password' name='userPass'></td>
+					<td align="left"><span id="a2"></span></td>
+				  </tr>
+				  <tr height=40>
+					<td width="15%">验证码:</td>
+					<td align="left" width="45%">
+						<!--验证码-->
+						<table>
+							<tr>
+								<td><input id="id_Verification_code" class='codebox' type="text" size="10" name="Verification_code"/></td>
+								<td><img id="id_code" name="code" src="image" title="看不清，换一张" onclick="refresh()" style="display: inline;"></td>
+							</tr>
+						
+						</table>
+						<!--	<a href="#">不清楚，再来一张</a> -->
+					</td>
+				  </tr>
+				  <tr height=40>
+					<td>&nbsp;</td>
+					<td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input id='btnLogin' type='submit' value=" 登 录 " >
+						<a href="#">忘记密码？</a>	
+					</td>
+				  </tr>
+				</table>
+			</form>
+
+			</div>
+			<div id="root"></div>
+			
+		</div>
+		
+	</DIV>
+	
+	
+</BODY>
+</HTML>

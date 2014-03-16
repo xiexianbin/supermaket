@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+ <default_action_class namespace="/storage" class="com.storage.action.StoreAction">  
+	
+	  <action name="storeList" method="storeList">
+	 	 <result name="success">storeList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	  <action name="storeDetil" method="storeDetil">
+	 	 <result name="success">storeDetil.jsp</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>
+	  
+	  <action name="listBySto" method="listBySto">
+	 	 <result name="success">storeListBySto.jsp</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>
+	  
+	  <action name="listByPro" method="listByPro">
+	 	 <result name="success">storeListByPro.jsp</result>
+	    <result name="error" type="redirect">error.jsp</result>
+	  </action>
+	  
+ </default_action_class>
+</mvc>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+ <default_action_class namespace="/storage" class="com.storage.action.StoreAlarmAction">  
+	
+	  <action name="numAlarmList" method="numAlarmList">
+	 	 <result name="success">numAlarmList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+	 <action name="dateAlarmList" method="dateAlarmList">
+	 	 <result name="success">dateAlarmList.jsp</result>
+	    <result name="error" type="redirect" >error.jsp</result>
+	  </action>
+	  
+ </default_action_class>
+</mvc>
